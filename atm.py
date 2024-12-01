@@ -71,6 +71,7 @@ class ATM:
                 if account_number in self.accounts:
                     account = self.accounts[account_number]
                     if authenticate(account):
+
                         self.perform_transaction(account)
                 else:
                     print("Account not found. Please create an account.")
